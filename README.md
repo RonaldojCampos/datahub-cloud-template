@@ -16,7 +16,7 @@ datapackage:
         type: Entity
       - name: Year
         type: Year
-	  - name: Total corporate investment - inflation adjusted
+      - name: Total corporate investment - inflation adjusted
         type: Total corporate investment - inflation adjusted
 ---
 
