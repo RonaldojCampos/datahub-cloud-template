@@ -29,8 +29,8 @@ The data files will be automatically displayed here.
 We can add a chart:
 
 <LineChart
-  data="./data.csv"
-  title="C02 per decade"
-  xAxis="year"
-  yAxis="co2"
+  data="./corporate-investment-in-artificial-intelligence-by-type.csv"
+  title="Annual global corporate investment in IA"
+  xAxis="Year"
+  yAxis="Total corporate investment - inflation adjusted"
 />
