@@ -6,16 +6,18 @@ datapackage:
   - path: http://opendatacommons.org/licenses/pddl/
     title: Open Data Commons Public Domain Dedication and License v1.0
   resources:
-  - path: data.csv
-    title: C02 PPM per decade
-    name: c02-per-decade
+  - path: corporate-investment-in-artificial-intelligence-by-type.csv
+    title: Annual global corporate investment in IA
+    name: corporate-investment-in-artificial-intelligence-by-type
     format: csv
     schema:
       fields:
-      - name: year
-        type: date
-      - name: co2
-        type: number
+      - name: Entity
+        type: Entity
+      - name: Year
+        type: Year
+	  - name: Total corporate investment - inflation adjusted
+        type: Total corporate investment - inflation adjusted
 ---
 
 Here's some text.
