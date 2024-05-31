@@ -63,7 +63,7 @@ We can add a chart:
                 layers={[
                     {
                         data: {
-                            geojson: list as any
+                            geojson: './data.csv'
                         },
                         name: 'Points',
                         tooltip: {
