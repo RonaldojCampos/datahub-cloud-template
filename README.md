@@ -28,9 +28,52 @@ The data files will be automatically displayed here.
 
 We can add a chart:
 
-<LineChart
-  data="./corporate-investment-in-artificial-intelligence-by-type.csv"
-  title="Annual global corporate investment in IA"
-  xAxis="Year"
-  yAxis="Total corporate investment - inflation adjusted"
-/>
+<Map
+                autoZoomConfiguration={{
+                    layerName: 'Points'
+                }}
+                center={{
+                    latitude: 53.9614,
+                    longitude: -1.0739
+                }}
+                layers={[
+                    {
+                        data: {
+                            url: 'https://opendata.arcgis.com/datasets/9c58741995174fbcb017cf46c8a42f4b_25.geojson'
+                        },
+                        name: 'Points',
+                        tooltip: {
+                            propNames: [
+                                'Location'
+                            ]
+                        }
+                    }
+                ]}
+                title="Roads in York"
+
+            />
+            <Map
+                autoZoomConfiguration={{
+                    layerName: 'Points'
+                }}
+                center={{
+                    latitude: 53.9614,
+                    longitude: -1.0739
+                }}
+                layers={[
+                    {
+                        data: {
+                            geojson: list as any
+                        },
+                        name: 'Points',
+                        tooltip: {
+                            propNames: [
+                                'Location'
+                            ]
+                        }
+                    }
+                ]}
+                title="Roads in York"
+            />
+
+
